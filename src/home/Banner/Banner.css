@@ -1,0 +1,238 @@
+.home__banner {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: #0a071b;
+}
+.home__banner__content {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+.home__banner__text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  max-width: 600px;
+  position: relative;
+  margin-left: 30px;
+}
+.home__banner__text > img {
+  width: 150px;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+}
+.home__banner__text > p {
+  color: #bcb8d0;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+.home__banner__text > h1 {
+  color: white;
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  z-index: 2;
+}
+.home__banner__text_btns {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+}
+.btn__orange {
+  display: block;
+  min-height: 48px;
+  padding: 14px 32px;
+  background-color: #f58859;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.btn__orange:hover {
+  background-color: #ec9c7a;
+}
+
+.btn {
+  min-height: 48px;
+  padding: 14px 32px;
+  border-radius: 4px;
+  background-color: #2a263f;
+  cursor: pointer;
+  border: 0;
+  color: white;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: white;
+  color: #2a263f;
+}
+
+.home__banner__img__wrapper {
+  width: 500px;
+  height: 600px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.home__banner__image {
+  width: 400px;
+  height: 600px;
+  background-color: #2a263f;
+  border-radius: 7px;
+  background-image: url("https://assets.website-files.com/60c1736aaad648491e964d73/60c1736aaad6481e3b964d89_Hero%20Accent%20Large.svg");
+}
+.home__banner__image > img {
+  height: 600px;
+  width: 110%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.home__banner__stars {
+  display: flex;
+  margin-top: 120px;
+  gap: 100px;
+}
+.home__banner__star {
+  display: flex;
+  color: white;
+  gap: 10px;
+  align-items: center;
+}
+.star__container {
+  padding: 2px 5px;
+  background-color: #f58859;
+  border-radius: 3px;
+}
+.home__banner__star > p {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+.home__first {
+  margin-top: 150px;
+  display: flex;
+  gap: 150px;
+}
+.home__first__image {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 480px;
+}
+.home__first__image > img:nth-of-type(1) {
+  z-index: 5;
+}
+.home__first__image > img:nth-of-type(2) {
+  position: absolute;
+  bottom: -120px;
+  right: 0;
+}
+.home__first__text {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+.home__first__text > h1 {
+  font-size: 50px;
+  color: white;
+  font-weight: 800;
+}
+.home__first__text > p {
+  margin-top: 50px;
+  color: #bcb8d0;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+}
+.home__first__text > a {
+  margin-top: 30px;
+  width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .home__banner__content {
+    flex-direction: column;
+  }
+  .home__banner__img__wrapper {
+    width: 600px;
+  }
+  .home__first__image {
+    width: 600px;
+    height: 700px;
+  }
+  .home__banner__stars {
+    flex-direction: column;
+  }
+  .home__first {
+    flex-direction: column;
+  }
+  .home__first__image > img:nth-of-type(2) {
+    bottom: -0px;
+    right: 10%;
+  }
+  .home__first__text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__first__text > a {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .home__banner__text {
+    margin-left: 40px;
+    max-width: 390px;
+  }
+  .home__banner__img__wrapper {
+    width: 400px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__banner__image {
+    width: 300px;
+    height: 500px;
+  }
+  .home__first__image {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+  }
+  .home__first__image > img:nth-of-type(1) {
+    z-index: 1;
+    width: 100%;
+  }
+  .home__first__image > img:nth-of-type(2) {
+    right: -10px;
+    z-index: 0;
+  }
+  .home__first__text {
+    max-width: 300px;
+  }
+  .home__first__text > h1 {
+    line-height: 40px;
+  }
+}

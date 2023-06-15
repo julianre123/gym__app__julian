@@ -1,0 +1,30 @@
+.about__values__container {
+  background-color: #f8f7fc;
+  padding-top: 70px;
+}
+
+.about__values__text__text > h1 {
+  color: #0a071b;
+}
+.about__values__text__text > a {
+  background-color: #0a071b;
+}
+.about__values__text__text > a:hover {
+  background-color: #0a071b;
+  color: #f58859;
+}
+.about__values__item {
+  background-color: #fff;
+}
+.about__values__item > h3 {
+  color: #0a071b;
+}
+.about__values__item > p {
+  color: #5b5675;
+}
+
+@media screen and (max-width: 420px) {
+  .about__values__container {
+    margin-top: 300px;
+  }
+}

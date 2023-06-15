@@ -1,0 +1,130 @@
+.about__second {
+  width: 100vw;
+  background-color: #0a071b;
+  position: relative;
+  margin-top: 200px;
+  height: 800px;
+  padding-top: 130px;
+}
+.about__second__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+.about__second__container > img {
+  position: absolute;
+  left: auto;
+  top: -110px;
+  right: 20%;
+  width: 220px;
+}
+.about__second__text {
+  position: relative;
+  z-index: 50;
+  width: 50%;
+}
+.about__second__text > img {
+  position: absolute;
+  left: -35px;
+  top: -25px;
+  right: auto;
+  bottom: auto;
+  z-index: -1;
+}
+.about__second__text > h1 {
+  z-index: 99;
+  color: White;
+  font-size: 55px;
+  line-height: 56px;
+  font-weight: 800;
+}
+.about__second__flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 120px;
+}
+.about__second__flex__text > h2 {
+  color: White;
+  font-size: 45px;
+  line-height: 56px;
+  font-weight: 800;
+}
+.about__second__flex__text > p {
+  color: #8c87a6;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.about__second__map {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 1100px;
+  height: 500px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about__second__map > img:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 5;
+}
+.about__second__map > img:nth-of-type(2) {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  z-index: 6;
+}
+.about__second__bg {
+  position: absolute;
+  width: 100vw;
+  background-color: #f8f7fc;
+  top: 274px;
+  min-height: 210px;
+  height: 227px;
+}
+@media screen and (max-width: 768px) {
+  .about__second__map {
+    width: 700px;
+    height: 400px;
+  }
+  .about__second__container > img {
+    width: 150px;
+    right: 50px;
+    top: -100px;
+  }
+  .about__second__text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about__second__flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-left: 130px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .about__second__text > h1 {
+    font-size: 50px;
+  }
+  .about__second__flex {
+    margin-left: 10px;
+    gap: 30px;
+  }
+  .about__second__map {
+    width: 320px;
+  }
+}
